@@ -44,6 +44,14 @@ body {
     text-shadow: 0 0 10px #000;
 }
 
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .heading {
+        margin-top: -100px; /* Push the text upwards on smaller screens */
+        font-size: 4em; /* Optionally reduce font size for better fit */
+    }
+}
+
 .heading-subtext {
     color: #fff;
     display: block;
