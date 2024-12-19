@@ -1,15 +1,18 @@
-*{
+* {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     color: #222;
 }
-html, body{
+
+html,
+body {
     margin: 0;
     height: 100vh;
     text-align: center;
 }
-.header{
-    background-image: url(./img/hero.jpeg);
+
+.header {
+    background-image: url(./img/four.jpg);
     background-repeat: no-repeat;
     background-position: 50% 60%;
     background-attachment: scroll;
@@ -18,6 +21,20 @@ html, body{
     margin: 0;
     padding-top: 60vh;
 }
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .header {
+        background-image: url(./img/three.jpg);
+        /* Use a smaller image for mobile */
+        background-position: center;
+        background-size: contain;
+        /* Adjust size to fit better on smaller screens */
+        padding-top: 50vh;
+        /* Adjust padding if needed */
+    }
+}
+
 .heading {
     color: #ffffff;
     display: block;
@@ -26,14 +43,16 @@ html, body{
     font-weight: normal;
     text-shadow: 0 0 10px #000;
 }
-.heading-subtext{
+
+.heading-subtext {
     color: #fff;
     display: block;
     font-family: 'Caveat', cursive;
     font-size: .6em;
 }
-.fixed-button{
-    background: rgba(20,20,20,.5);
+
+.fixed-button {
+    background: rgba(20, 20, 20, .5);
     border-radius: 1em;
     bottom: 1em;
     color: white;
@@ -44,7 +63,8 @@ html, body{
     text-decoration: none;
     z-index: 9999;
 }
-.fixed-button::after{
+
+.fixed-button::after {
     content: "\25BE";
     display: block;
     font-size: 28px;
@@ -53,32 +73,39 @@ html, body{
     margin-top: 10px;
     text-align: center;
 }
+
 .fixed-button:active,
-.fixed-button:hover{
-    background: rgba(20,20,20,.9);
+.fixed-button:hover {
+    background: rgba(20, 20, 20, .9);
 }
-.section{
+
+.section {
     margin: 0 auto;
     max-width: 600px;
     padding: 1em 2.4em;
 }
-.sub-heading{
+
+.sub-heading {
     font-family: 'Caveat', cursive;
     font-size: 3em;
     margin-top: 2em;
 }
-.details{
+
+.details {
     margin: 0 auto 8em;
 }
-.details-heading{
+
+.details-heading {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .fas {
     font-size: 3em;
     opacity: .8;
 }
-.resort-image{
+
+.resort-image {
     width: 100%
 }
 
@@ -86,4 +113,4 @@ html, body{
     .heading {
         font-size: 4em;
     }
-  }
+}
