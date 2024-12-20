@@ -29,8 +29,10 @@ body {
         /* Use a smaller image for mobile */
         background-position: center;
         background-size: contain;
+        background-color: #3e8e41;
         /* Adjust size to fit better on smaller screens */
         padding-top: 50vh;
+        width: 100%;
         /* Adjust padding if needed */
        
     }
