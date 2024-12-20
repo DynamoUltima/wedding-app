@@ -38,6 +38,16 @@ body {
     }
 }
 
+@media (max-width: 1024px) { /* Adjust for tablets and larger phones */
+    .header {
+        background-image: url(./img/three.jpg);
+        background-position: center center; /* Ensures the image is centered horizontally and vertically */
+        background-size: cover; /* Ensures the image covers the entire header area */
+        padding-top: 50vh; /* Adjust padding as needed */
+        width: 100%;
+    }
+}
+
 .heading {
     color: #ffffff;
     display: block;
@@ -49,6 +59,13 @@ body {
 
 /* Media query for mobile screens */
 @media (max-width: 768px) {
+    .heading {
+        margin-top: -100px; /* Push the text upwards on smaller screens */
+        font-size: 4em; /* Optionally reduce font size for better fit */
+    }
+}
+
+@media (max-width: 1024px) {
     .heading {
         margin-top: -100px; /* Push the text upwards on smaller screens */
         font-size: 4em; /* Optionally reduce font size for better fit */
